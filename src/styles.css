@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+/* remixicon in node_modules */
+@import "~remixicon/fonts/remixicon.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

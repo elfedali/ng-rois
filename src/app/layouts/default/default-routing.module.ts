@@ -10,7 +10,7 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        redirectTo: "dashboard",
+        redirectTo: "chat",
         pathMatch: "full",
       },
       {
@@ -19,6 +19,11 @@ const routes: Routes = [
           import("../../pages/dashboard/dashboard.module").then(
             (m) => m.DashboardModule
           ),
+      },
+      {
+        path: "chat",
+        loadChildren: () =>
+          import("../../pages/chat/chat.module").then((m) => m.ChatModule),
       },
     ],
   },
